@@ -1,2 +1,2 @@
 # BookBot
-BookBot is my first project!
+Simple BootDev project to learn how to deal with strings.

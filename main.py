@@ -3,11 +3,11 @@ def main():
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     chars_dict = get_chars_dict(text)
-    
+    chars_sorted = dict(sorted(chars_dict.items(), reverse = True, key=lambda x: x[1]))   
     print(f"--- Begin report of {book_path} ---")
     print(f"{num_words} words found in the document\n\n")
-    for letter in chars_dict:
-        print(f"The {letter} character was found {chars_dict[letter]} times")
+    for letter in chars_sorted:
+        print(f"The {letter} character was found {chars_sorted[letter]} times")
     print(f"\n--- End report ---")
 
 
